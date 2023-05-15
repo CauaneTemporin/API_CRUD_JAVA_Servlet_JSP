@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Adicionar empresas</title>
+</head>
+<body>
+	<form action="/gerenciador/fornecedor" method="post">
+		Nome: <input type="text" name="nome"> <input type="submit" />
+	</form>
+</body>
+</html>

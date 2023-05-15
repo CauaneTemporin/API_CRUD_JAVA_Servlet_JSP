@@ -1,0 +1,14 @@
+
+<%
+String nomeForncedor = (String)request.getAttribute("empresa");
+System.out.println(nomeForncedor);
+%>
+
+
+<html>
+<head>
+</head>
+<body>
+	Fornecedor ${ forncedor } cadastrado com sucesso!!!
+</body>
+</html>

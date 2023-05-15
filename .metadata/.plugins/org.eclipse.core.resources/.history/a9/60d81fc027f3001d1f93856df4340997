@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<c:url value="/novoFornecedor" var="linknovoFornecedor"/>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<form action="${linknovoFornecedor }" method="post">
+			Nome: <input type="text" name="nome" value ="${ fornecedor.nome_fornecedor }"/>
+			Data abertura: <input type="text" name="data" value ="<fmt:formatDate value="${fornecedor.dataAbertura}" pattern="dd/MM/yyyy"/>"/>
+				
+			<input type="submit" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+
+<%
+String nomeEmpresa = "Alura"
+System.out.println(nomeEmpresa);
+%>
+<html>
+<head>
+</head>
+<body>
+Fornecedor nomeForncedor cadastrado com sucesso!!!
+</body>
+</html>

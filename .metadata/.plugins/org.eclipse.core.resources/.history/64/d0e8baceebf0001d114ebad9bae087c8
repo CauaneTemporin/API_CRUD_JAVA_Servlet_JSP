@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+	Fornecedor
+	<%= nomeForncedor %>
+	cadastrado com sucesso!!!
+</body>
+</html>

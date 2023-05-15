@@ -1,0 +1,33 @@
+package com.temporintech.gerenciador.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+//Servlet implementation class Fornecedor
+@WebServlet("/fornecedorServlet")
+public class FornecedorServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Cadastrando novo fornecedor");
+		//Recebe parametros da requisão  
+		String nomeForncedor = request.getParameter("nome");
+		Fornecedor fornecedor = new Fornecedor();
+		fornecedor.setNome_fornecedor(nomeForncedor);
+		
+		Banco banco = new Banco();
+		banco.adiciona(fornecedor);
+		
+		//Imprime dados formatados em um fluxo de saída
+		PrintWriter printWriter = response.getWriter();
+		//Resposta
+		printWriter.println("<html><body>Fornecedor "+ nomeForncedor +" cadastrado com sucesso!!!</body></html>");
+	}
+
+}

@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ page import= "java.util.List, com.temporintech.gerenciador.servlet.Fornecedor"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Lista de Empresas: </br>
+	<ul>
+		<% 
+		List<Fornecedor> lista = (List<Fornecedor>)request.getAttribute("fornecedores");
+		for (Fornecedor fornecedor : lista) {
+		%>
+		<li><%=fornecedor.getNome_fornecedor()%>></li>
+
+		<%
+		}
+		%>
+	</ul>
+
+</body>
+</html>

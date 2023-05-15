@@ -1,0 +1,5 @@
+package com.temporintech.gerenciador.servlet;
+
+public class HelloWorld {
+
+}

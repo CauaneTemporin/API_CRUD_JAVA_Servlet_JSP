@@ -1,0 +1,12 @@
+
+<%
+String nomeForncedor = "Alura";
+System.out.println(nomeForncedor);
+%>
+<html>
+<head>
+</head>
+<body>
+Fornecedor <% out.println(nomeForncedor); %> cadastrado com sucesso!!!
+</body>
+</html>
